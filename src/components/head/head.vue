@@ -2,7 +2,7 @@
     <el-row style="height: 10%" class="head">
         <el-col :span='15' style="height:100%;line-height: 60px">
             <img class="logo" src="../../assets/img/logo.png" alt="">
-            <span class="head_title">公安大数据智慧刑侦平台</span>
+            <span class="head_title">智慧刑侦</span>
             <el-radio-group v-model="menu" @change="radioChange">
                 <el-radio-button label="电子防区人员管控"></el-radio-button>
                 <el-radio-button label="案件关联号码筛查"></el-radio-button>
@@ -24,7 +24,7 @@
                 </el-submenu>
             </el-menu>
         </el-col>
-        <el-col class="blue"></el-col>
+        <!-- <el-col class="blue"></el-col> -->
 
 
     </el-row>

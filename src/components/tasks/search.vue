@@ -322,6 +322,16 @@
         		this.region ? this.$refs.map.mapObject.removeLayer(this.region) : ''
                 this.region=L.circle(center,radius).addTo(this.$refs.map.mapObject)
                 edit ? this.region.pm.enable() : null
+                let _this = this;
+                this.region.on('pm:markerdragend', function(e) {
+                    if (_this.region.getTooltip() === undefined) {
+                         _this.region.bindTooltip('半径：' + e.target._radius, {
+                            permanent : true,
+                        });
+                    } else {
+                         _this.region.setTooltipContent('半径：' + e.target._radius);
+                    }
+                });
         	},
             /**
              * [清除绘制的区域]

@@ -35,7 +35,7 @@
     "axios": "^0.18.0",
     "element-ui": "^2.4.6",
     "jquery": "^3.4.1",
-    "leaflet.pm": "^0.25.0",
+    "leaflet.pm": "^2.0.3",
     "particles.js": "^2.0.0",
     "proj4leaflet": "^1.0.2",
     "qs": "^6.5.2",

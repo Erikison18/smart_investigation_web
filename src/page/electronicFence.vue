@@ -904,6 +904,7 @@
         position: relative;
         height: 90%;
         .warnInfo {
+            display: none;
             position: relative;
             width: 100%;
             height: 40px;
