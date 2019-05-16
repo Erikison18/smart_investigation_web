@@ -19,14 +19,14 @@ router.beforeEach((to,from,next) => {
 	      	next()
 	    } else {
 	      	
-	      	// Message('���ȵ�¼��')
-	      	// next({
-	      	// 	path: '/',
-	      	// 	query:{ Rurl: to.fullPath}
-	      	// })
+	      	Message('���ȵ�¼��')
+	      	next({
+	      		path: '/',
+	      		query:{ Rurl: to.fullPath}
+	      	})
 	      	
           
-          next()
+        //   next()
 	    }
 	}else{
 		next()
