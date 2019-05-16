@@ -16,8 +16,8 @@ const crs = new L.Proj.CRS(
         bounds: L.bounds([20037508.342789244, 0], [0, 20037508.342789244])
     });
 
-const tileURL="http://10.214.50.99:9000/sdbdmap/{z}/{x}/{y}.png";
-//const tileURL="http://online4.map.bdimg.com/tile/?qt=vtile&x={x}&y={y}&z={z}&styles=pl&scaler=1&udt=20190505";
+// const tileURL="http://10.214.50.99:9000/sdbdmap/{z}/{x}/{y}.png";
+const tileURL="http://online4.map.bdimg.com/tile/?qt=vtile&x={x}&y={y}&z={z}&styles=pl&scaler=1&udt=20190505";
 const centerPoint=[36.67742,117.026435];
 const mapZoom=15;
 

@@ -14,19 +14,19 @@ const router = new Router({
 router.beforeEach((to,from,next) => {
 	// if(to.matched.some( m => m.meta.auth)){
   	if (to.meta.auth) {
-    	// ¸ù¾ÝÒµÎñÐèÒªÐÞ¸ÄµÇÂ½ÅÐ¶ÏÌõ¼þ
+    	// ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½Òªï¿½Þ¸Äµï¿½Â½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½
 	    if (store.state.isLogin) {
 	      	next()
 	    } else {
 	      	
-	      	Message('ÇëÏÈµÇÂ¼£¡')
-	      	next({
-	      		path: '/',
-	      		query:{ Rurl: to.fullPath}
-	      	})
+	      	// Message('ï¿½ï¿½ï¿½Èµï¿½Â¼ï¿½ï¿½')
+	      	// next({
+	      	// 	path: '/',
+	      	// 	query:{ Rurl: to.fullPath}
+	      	// })
 	      	
           
-          //next()
+          next()
 	    }
 	}else{
 		next()

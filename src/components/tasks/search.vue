@@ -325,11 +325,11 @@
                 let _this = this;
                 this.region.on('pm:markerdragend', function(e) {
                     if (_this.region.getTooltip() === undefined) {
-                         _this.region.bindTooltip('半径：' + e.target._radius, {
+                         _this.region.bindTooltip('半径：' + _this.region.getRadius().toFixed(1), {
                             permanent : true,
                         });
                     } else {
-                         _this.region.setTooltipContent('半径：' + e.target._radius);
+                         _this.region.setTooltipContent('半径：' + _this.region.getRadius().toFixed(1));
                     }
                 });
         	},

@@ -15,7 +15,7 @@
         },
         data() {
             return {
-                is_search:false
+                is_search:true
             }
         },
         mounted(){
